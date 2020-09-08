@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Kahoot-bot
+Bot that joins the kahoot game with multiple names and starts awnsering random questions
 
-You can use the [editor on GitHub](https://github.com/Nuckerr/KahootBot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Installation Guide:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Make sure that you have nodejs v6 or higher installed on your computer. If you don't you can download it from here: http://nodejs.org
 
-### Markdown
+2. Clone the repository and open your terminal or CMD
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+3. navigate to the directory where the Kahoot bot is cloned and type ```npm install```
 
-```markdown
-Syntax highlighted code block
+Your bot is now ready to use!
 
-# Header 1
-## Header 2
-### Header 3
+If you want the bot to join a game you have to do the following:
 
-- Bulleted
-- List
+1. Open the settings.json file and change the ```"pin": 1234567``` variable to the game pin you are using.
 
-1. Numbered
-2. List
+2. Then change ```"bot_name"``` to any name you want.
 
-**Bold** and _Italic_ and `Code` text
+3. Finally change ```"amount": 10``` to the amount of bots you want
+
+4. Then run the ```start.bat``` file (or ```start.command``` if your on mac) and wait for the bots to join
+
+Have fun!
+
 
 [Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Nuckerr/KahootBot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
