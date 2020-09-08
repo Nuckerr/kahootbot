@@ -22,6 +22,3 @@ If you want the bot to join a game you have to do the following:
 4. Then run the ```start.bat``` file (or ```start.command``` if your on mac) and wait for the bots to join
 
 Have fun!
-
-
-[Link](url) and ![Image](src)
