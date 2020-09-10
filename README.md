@@ -1,3 +1,4 @@
+https://img.shields.io/amo/v/test?style=flat-square
 # Kahoot-bot
 Bot that joins the kahoot game with multiple names and starts awnsering random questions
 
