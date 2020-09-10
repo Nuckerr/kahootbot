@@ -1,3 +1,4 @@
+[![Run on Repl.it](https://repl.it/badge/github/Nuckerr/kahootbot)](https://repl.it/github/Nuckerr/kahootbot)
 # Kahoot-bot
 Bot that joins the kahoot game with multiple names and starts awnsering random questions
 
