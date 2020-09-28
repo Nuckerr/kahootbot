@@ -13,5 +13,5 @@ if (cluster.isMaster) {
     });
 
 } else {
-    require('./index');
+    require('./script');
 }

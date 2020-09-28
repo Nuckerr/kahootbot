@@ -1,22 +1,33 @@
-var Kahoot = require('kahoot.js-updated');
-var settings = require('./settings.json');
-var pin = settings.pin;
-var client = new Kahoot;
-var NameGenerator = require('nodejs-randomnames');
-var randomName = settings.bot_name + "-"+Math.round(Math.random() *1000);
-var game_pin = settings.pin;
-var randomnumber = Math.round(Math.random() * 3);
+const botConfig = require("./config.json");
+const settings = require("./settings.json");
+const Discord = require("discord.js");
+var Kahoot = require("kahoot.js-updated");
+var cluster = require('cluster');
+var user = new Kahoot();
 
-console.log("Joining kahoot...  ");
-client.join(pin, randomName);
-client.on("joined", () => {
-    console.log("I joined the Kahoot!");
+const bot = new Discord.Client();
+bot.on("ready", async () => {
+    console.log("Bot is now online");
+    bot.user.setActivity("Flooding kahoot games");
 });
-client.on("questionStart", question => {
-    console.log("A new question has started, answering the first answer.");
-    question.answer(randomnumber);
-    randomnumber = Math.floor(Math.random() * 3);
+bot.on("message", async message => {
+    let prefix = botConfig.prefix;
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0]
+    let args = messageArray.slice(1);
+
+    if(cmd == `${prefix}flood`) {
+        console.log("Joining...")
+        var i;
+            for (var i = 0; i < settings.amount; i += 1) {
+                console.log("Joining kahoot...  ");
+                user.join(pin, "bot-"+i);
+            }   
+        return message.channel.send("**Flooding**");
+    }
 });
-client.on("quizEnd", () => {
-    console.log("The quiz has ended.");
-});
+    user.on("joined", () => {
+        console.log("I joined the Kahoot!");
+    });
+
+bot.login(botConfig.token);
