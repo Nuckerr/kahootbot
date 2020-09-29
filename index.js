@@ -39,6 +39,9 @@ bot.on("message", async message => {
             message.channel.send(`${prefix}floodgame {pin} {amount}`);
         }
         return;
+    } else if(cmd == `${prefix}help`) {
+        message.channel.send("Only one command:P");
+        return message.channel.send("`!floodgame {pin} {amount}`");
     }
 });
 
