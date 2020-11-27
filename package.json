@@ -9,12 +9,9 @@
   "author": "Yannick Forget",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.3.1",
-    "kahoot-spam": "^1.1.8",
     "kahoot.js-updated": "^1.0.0",
+    "nodejs-randomnames": "^1.0.1",
     "prompt": "^1.0.0",
-    "readline": "^1.3.0",
-    "user-agents": "^1.0.559",
-    "ws": "^7.3.1"
+    "readline": "^1.3.0"
   }
 }
