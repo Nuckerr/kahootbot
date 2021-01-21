@@ -1,0 +1,25 @@
+{
+  "name": "kahootbot",
+  "version": "1.0.0",
+  "description": "Bot your kahoot games",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nuckerr/kahootbot.git"
+  },
+  "keywords": [],
+  "author": "Nuckerr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nuckerr/kahootbot/issues"
+  },
+  "homepage": "https://github.com/Nuckerr/kahootbot#readme",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "kahoot.js-updated": "^2.3.2"
+  }
+}
