@@ -1,14 +1,15 @@
-var Kahoot = require('kahoot.js-updated');
-var settings = require('./settings.json');
-var pin = settings.pin;
-var client = new Kahoot;
-var NameGenerator = require('nodejs-randomnames');
-var randomName = settings.bot_name + "-"+Math.round(Math.random() *1000);
-var game_pin = settings.pin;
-var randomnumber = Math.round(Math.random() * 3);
+let Kahoot = require('kahoot.js-updated');
+let settings = require('./settings.json');
+let client = new Kahoot;
+let NameGenerator = require('nodejs-randomnames');
+let randomName = settings.randomName ? NameGenerator.randomName.getRandomName() : settings.bot_name + "-"+Math.round(Math.random()*1000);
 
-console.log("Joining kahoot...  ");
-client.join(pin, randomName);
+
+let i;
+for (i = 0; i < settings.amount; i++) {
+  console.log("Joining kahoot...  ");
+  client.join(settings.pin, randomName);
+} 
 client.on("joined", () => {
     console.log("I joined the Kahoot!");
 });
