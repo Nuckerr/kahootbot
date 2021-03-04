@@ -7,6 +7,8 @@ Bot that joins the kahoot game with multiple names and starts awnsering random q
 
 Installation Guide:
 
+Youtube vide: https://youtu.be/5TCyBN4Ymw0
+
 1. Make sure that you have nodejs v6 or higher installed on your computer. If you don't you can download it from here: http://nodejs.org
 
 2. Clone the repository and open your terminal or CMD
