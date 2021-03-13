@@ -19,10 +19,8 @@ Your bot is now ready to use!
 
 If you want the bot to join a game you have to do the following:
 
-1. Open the settings.json file and change the ```"pin": 1234567``` variable to the game pin you are using.
+1. Run `npm run start` to start the bot.
+2. It will ask for a pin. Provide it and they should all join.
 
-2. Then change ```"bot_name"``` to any name you want.
-
-3. Finally change ```"amount": 10``` to the amount of bots you want
-
-4. Then run the ```start.bat``` file (or ```start.command``` if your on mac) and wait for the bots to join
+**Customzing**
+All the customzing can be found in the settings.json file. By default each user will just join with a random name however you can have it as set names
